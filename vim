@@ -20,16 +20,16 @@ G - last line
 0 - start of line
 ^ - non-blank start of line
 $ - end of line
-
+} - next paragraph
+{ - previous paragraph
 w/W - start of next word
 e/E - end of next word
 b/B - start of previous word
 
-} - next paragraph
-{ - previous paragraph
-
-f? - jump to ?
-t? - jump before ?
+f/F? - jump [backwards] to ?
+t/T? - jump [backwards] to before ?
+; - repeat search fowards
+, - repeat search backwards
 % - jump to matching
 
 # insert mode
@@ -45,7 +45,7 @@ ctrl + w - delete word before cursor
 ctrl + j - new line
 ctrl + t - indent
 ctrl + d - deindent
-ctrl + ?x - paste register ?
+ctrl + r? - paste register ?
 
 # visual mode
 v - character mode
