@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Gothic+A1:wght@700&family=Yrsa&display=swap');
+
+body {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 19px;
+    background-color: #232530;
+    color: #e3bac3;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    padding: 40px 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d8991;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+    columns: 3;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul {
+    font-family: Yrsa, serif;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+kbd {
+    font-family: 'Fira Mono', 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #D4516f;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        columns: 2;
+    }
+}
+
+@media all and (max-width: 650px) {
+    main {
+        columns: 1;
+    }
+}

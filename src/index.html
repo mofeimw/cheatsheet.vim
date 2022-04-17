@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vim cheat sheet</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+			<section>
+				<h2>navigation</h2>
+				<ul>
+					<li><kbd>h</kbd> - left</li>
+					<li><kbd>l</kbd> - right</li>
+					<li><kbd>j</kbd> - down</li>
+					<li><kbd>k</kbd> - up</li>
+					<li><kbd>ctrl + d</kbd> - down 1/2 screen</li>
+					<li><kbd>ctrl + u</kbd> - up 1/2 screen</li>
+					<li><kbd>ctrl + f</kbd> - down 1 screen</li>
+					<li><kbd>ctrl + b</kbd> - up 1 screen</li>
+					<li><kbd>H</kbd> - top of screen</li>
+					<li><kbd>M</kbd> - middle of screen</li>
+					<li><kbd>L</kbd> - bottom of screen</li>
+					<li><kbd>gg</kbd> - first line</li>
+					<li><kbd>G</kbd> - last line</li>
+					<li><kbd>:?</kbd> - line ?</li>
+					<li><kbd>0</kbd> - start of line</li>
+					<li><kbd>^</kbd> - non-blank start of line</li>
+					<li><kbd>$</kbd> - end of line</li>
+					<li><kbd>w/W</kbd> - start of next word</li>
+					<li><kbd>e/E</kbd> - end of next word</li>
+					<li><kbd>b/B</kbd> - start of previous word</li>
+					<li><kbd>}</kbd> - next paragraph</li>
+					<li><kbd>{</kbd> - previous paragraph</li>
+					<li><kbd>f?</kbd> - jump to ?</li>
+					<li><kbd>t?</kbd> - jump before ?</li>
+					<li><kbd>%</kbd> - jump to matching ( [ {</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>insert mode</h2>
+				<ul>
+					<li><kbd>i</kbd> - before cursor</li>
+					<li><kbd>I</kbd> - before line</li>
+					<li><kbd>a</kbd> - after cursor</li>
+					<li><kbd>A</kbd> - after line</li>
+					<li><kbd>o</kbd> - line below</li>
+					<li><kbd>O</kbd> - line above</li>
+					<li><kbd>ctrl + h</kbd> - delete character before cursor</li>
+					<li><kbd>ctrl + w</kbd> - delete word before cursor</li>
+					<li><kbd>ctrl + j</kbd> - new line</li>
+					<li><kbd>ctrl + t</kbd> - indent</li>
+					<li><kbd>ctrl + d</kbd> - deindent</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>visual mode</h2>
+				<ul>
+					<li><kbd>v</kbd> - character mode</li>
+					<li><kbd>V</kbd> - line mode</li>
+					<li><kbd>ctrl + v</kbd> - blockwise mode</li>
+					<li><kbd>></kbd> - indent</li>
+					<li><kbd><</kbd> - deindent</li>
+					<li><kbd>=</kbd> - autoindent</li>
+					<li><kbd>I</kbd> - insert (blockwise)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>macros</h2>
+				<ul>
+					<li><kbd>q?</kbd> - record macro into register ?</li>
+					<li><kbd>q</kbd> - end recording</li>
+					<li><kbd>@?</kbd> - run macro ?</li>
+					<li><kbd>_@?</kbd> - run macro ? _ times</li>
+					<li><kbd>@@</kbd> - rerun last run macro</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>text objects</h2>
+				<ul>
+					<li><kbd>?i/aw</kbd> - ? inside/around word</li>
+					<li><kbd>?i/as</kbd> - ? inside/around sentence</li>
+					<li><kbd>?i/ap</kbd> - ? inside/around paragraph</li>
+					<li><kbd>?i/a"</kbd> - ? inside/around quotes</li>
+					<li><kbd>?i/a(/b</kbd> - ? inside/around parentheses</li>
+					<li><kbd>?i/a[</kbd> - ? inside/around brackets</li>
+					<li><kbd>?i/a{/B</kbd> - ? inside/around braces</li>
+					<li><kbd>?i/a<</kbd> - ? inside/around angle brackets</li>
+					<li><kbd>?i/at</kbd> - ? inside/around html tags</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>cut & paste</h2>
+				<ul>
+					<li><kbd>x</kbd> - delete (short version)</li>
+					<li><kbd>y</kbd> - yank</li>
+					<li><kbd>yy</kbd> - yank line</li>
+					<li><kbd>p</kbd> - paste after cursor</li>
+					<li><kbd>P</kbd> - paste before cursor</li>
+					<li><kbd>d</kbd> - delete</li>
+					<li><kbd>dd</kbd> - delete line</li>
+					<li><kbd>"?yp</kbd> - yank/paste into register ?</li>
+					<li><kbd>"1y/p</kbd> - yank/paste newest register</li>
+					<li><kbd>"9y/p</kbd> - yank/paste oldest register</li>
+					<li><kbd>"0y/p</kbd> - yank/paste last yank (no deletes!)</li>
+					<li><kbd>"+y/p</kbd> - yank/paste into system clipboard</li>
+					<li><kbd>"_d</kbd> - delete into black hole register</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>editing</h2>
+				<ul>
+					<li><kbd>r</kbd> - replace with 1 character (exits to normal)</li>
+					<li><kbd>R</kbd> - replace until [esc]</li>
+					<li><kbd>cc/S</kbd> - change entire line (exits to insert)</li>
+					<li><kbd>c$/C</kbd> - changes from cursor til end of line</li>
+					<li><kbd>s</kbd> - substitutes  (exits to insert)</li>
+					<li><kbd>u</kbd> - undo</li>
+					<li><kbd>ctrl + r</kbd> - redo</li>
+					<li><kbd>.</kbd> - repeat last command</li>
+					<li><kbd>>></kbd> - indent</li>
+					<li><kbd><<</kbd> - deindent</li>
+					<li><kbd>==</kbd> - autoindent</li>
+					<li><kbd>]p</kbd> - paste with adjusted indent</li>
+					<li><kbd>~</kbd> - switch case</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
