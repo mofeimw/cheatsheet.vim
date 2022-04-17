@@ -45,6 +45,7 @@ ctrl + w - delete word before cursor
 ctrl + j - new line
 ctrl + t - indent
 ctrl + d - deindent
+ctrl + ?x - paste register ?
 
 # visual mode
 v - character mode
@@ -84,7 +85,7 @@ P - paste before cursor
 d - delete
 dd - delete line
 
-"?y/p - yank/paste into register ?
+"?y/p - yank/paste register ?
 "1y/p - yank/paste newest register
 "9y/p - yank/paste oldest register
 "+y/p - yank/paste into system clipboard

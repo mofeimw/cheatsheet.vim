@@ -30,7 +30,7 @@ while read -r line; do
 
             body+="\n\t\t\t\t\t<li><kbd>${key}</kbd> - ${def}</li>"
         }
-    }
+    } || body+="\n\t\t\t\t\t<br>"
 done < vim
 
 index+="${body:35}"
