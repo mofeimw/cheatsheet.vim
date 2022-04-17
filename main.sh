@@ -6,6 +6,7 @@ index=$(cat <<-END
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <title>vim cheat sheet</title>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="main.css">
