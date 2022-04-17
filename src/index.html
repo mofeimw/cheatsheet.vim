@@ -35,7 +35,7 @@
 					<li><kbd>{</kbd> - previous paragraph</li>
 					<li><kbd>f?</kbd> - jump to ?</li>
 					<li><kbd>t?</kbd> - jump before ?</li>
-					<li><kbd>%</kbd> - jump to matching ( [ {</li>
+					<li><kbd>%</kbd> - jump to matching</li>
 				</ul>
 			</section>
 
@@ -98,30 +98,30 @@
 			<section>
 				<h2>cut & paste</h2>
 				<ul>
-					<li><kbd>x</kbd> - delete (short version)</li>
+					<li><kbd>x</kbd> - delete</li>
 					<li><kbd>y</kbd> - yank</li>
 					<li><kbd>yy</kbd> - yank line</li>
 					<li><kbd>p</kbd> - paste after cursor</li>
 					<li><kbd>P</kbd> - paste before cursor</li>
 					<li><kbd>d</kbd> - delete</li>
 					<li><kbd>dd</kbd> - delete line</li>
-					<li><kbd>"?yp</kbd> - yank/paste into register ?</li>
+					<li><kbd>"?y/p</kbd> - yank/paste into register ?</li>
 					<li><kbd>"1y/p</kbd> - yank/paste newest register</li>
 					<li><kbd>"9y/p</kbd> - yank/paste oldest register</li>
-					<li><kbd>"0y/p</kbd> - yank/paste last yank (no deletes!)</li>
 					<li><kbd>"+y/p</kbd> - yank/paste into system clipboard</li>
 					<li><kbd>"_d</kbd> - delete into black hole register</li>
+					<li><kbd>"0p</kbd> - paste last copy, ignore cut/delete</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>editing</h2>
 				<ul>
-					<li><kbd>r</kbd> - replace with 1 character (exits to normal)</li>
+					<li><kbd>r</kbd> - replace with 1 character</li>
 					<li><kbd>R</kbd> - replace until [esc]</li>
-					<li><kbd>cc/S</kbd> - change entire line (exits to insert)</li>
-					<li><kbd>c$/C</kbd> - changes from cursor til end of line</li>
-					<li><kbd>s</kbd> - substitutes  (exits to insert)</li>
+					<li><kbd>cc/S</kbd> - change entire line</li>
+					<li><kbd>c$/C</kbd> - change from cursor til end of line</li>
+					<li><kbd>s</kbd> - substitute</li>
 					<li><kbd>u</kbd> - undo</li>
 					<li><kbd>ctrl + r</kbd> - redo</li>
 					<li><kbd>.</kbd> - repeat last command</li>

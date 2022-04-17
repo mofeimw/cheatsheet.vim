@@ -30,7 +30,7 @@ b/B - start of previous word
 
 f? - jump to ?
 t? - jump before ?
-% - jump to matching ( [ {
+% - jump to matching
 
 # insert mode
 i - before cursor
@@ -76,7 +76,7 @@ _@? - run macro ? _ times
 ?i/at - ? inside/around html tags
 
 # cut & paste
-x - delete (short version)
+x - delete
 y - yank
 yy - yank line
 p - paste after cursor
@@ -84,19 +84,19 @@ P - paste before cursor
 d - delete
 dd - delete line
 
-"?yp - yank/paste into register ?
+"?y/p - yank/paste into register ?
 "1y/p - yank/paste newest register
 "9y/p - yank/paste oldest register
-"0y/p - yank/paste last yank (no deletes!)
 "+y/p - yank/paste into system clipboard
 "_d - delete into black hole register
+"0p - paste last copy, ignore cut/delete
 
 # editing
-r - replace with 1 character (exits to normal)
+r - replace with 1 character
 R - replace until [esc]
-cc/S - change entire line (exits to insert)
-c$/C - changes from cursor til end of line
-s - substitutes  (exits to insert)
+cc/S - change entire line
+c$/C - change from cursor til end of line
+s - substitute
 
 u - undo
 ctrl + r - redo
