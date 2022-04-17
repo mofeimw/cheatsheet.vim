@@ -46,6 +46,8 @@ ctrl + j - new line
 ctrl + t - indent
 ctrl + d - deindent
 ctrl + r? - paste register ?
+ctrl + n - autocomplete next
+ctrl + p - autocomplete previous
 
 # visual mode
 v - character mode
