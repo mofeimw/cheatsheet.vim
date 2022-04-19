@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Gothic+A1:wght@700&family=Yrsa&display=swap');
 
+* {
+    scrollbar-width: none;
+}
+
 body {
     font-family: "Gothic A1", sans-serif;
     font-size: 19px;
     background-color: #232530;
     color: #e3bac3;
-    scrollbar-width: none;
     overflow-y: scroll;
     padding: 40px 0;
 }
@@ -38,7 +41,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 11px;
 }
 
 kbd {
