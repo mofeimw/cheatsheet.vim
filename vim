@@ -12,6 +12,7 @@ ctrl + b - up 1 screen
 H - top of screen
 M - middle of screen
 L - bottom of screen
+zz - center cursor on screen
 
 gg - first line
 G - last line
@@ -57,8 +58,6 @@ ctrl + v - blockwise mode
 > - indent
 < - deindent
 = - autoindent
-
-I - insert (blockwise)
 
 # macros
 q? - record macro into register ?
