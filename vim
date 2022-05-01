@@ -21,6 +21,7 @@ G - last line
 0 - start of line
 ^ - non-blank start of line
 $ - end of line
+g_ - non-blank end of line
 } - next paragraph
 { - previous paragraph
 w/W - start of next word
