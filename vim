@@ -28,11 +28,13 @@ w/W - start of next word
 e/E - end of next word
 b/B - start of previous word
 
-f/F? - jump [backwards] to ?
-t/T? - jump [backwards] to before ?
+f/F? - jump forwards/backwards to ?
+t/T? - jump forwards/backwards to before ?
 ; - repeat search fowards
 , - repeat search backwards
 % - jump to matching
+* - find next same word
+♯ - find previous same word
 
 # insert mode
 i - before cursor
@@ -86,6 +88,7 @@ p - paste after cursor
 P - paste before cursor
 d - delete
 dd - delete line
+D - delete to end of line
 
 "?y/p - yank/paste register ?
 "1y/p - yank/paste newest register
