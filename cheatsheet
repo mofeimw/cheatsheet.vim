@@ -4,10 +4,10 @@ l - right
 j - down
 k - up
 
-ctrl + d - down 1/2 screen
-ctrl + u - up 1/2 screen
-ctrl + f - down 1 screen
-ctrl + b - up 1 screen
+ctrl+d - down 1/2 screen
+ctrl+u - up 1/2 screen
+ctrl+f - down 1 screen
+ctrl+b - up 1 screen
 
 H - top of screen
 M - middle of screen
@@ -35,6 +35,7 @@ t/T? - jump forwards/backwards to before ?
 % - jump to matching
 * - find next same word
 ♯ - find previous same word
+]/[s - jump to next/previous misspelled word
 
 # insert mode
 i - before cursor
@@ -44,23 +45,25 @@ A - after line
 o - line below
 O - line above
 
-ctrl + h - delete character before cursor
-ctrl + w - delete word before cursor
-ctrl + j - new line
-ctrl + t - indent
-ctrl + d - deindent
-ctrl + r? - paste register ?
-ctrl + n - autocomplete next
-ctrl + p - autocomplete previous
+ctrl+h - delete character before cursor
+ctrl+w - delete word before cursor
+ctrl+j - new line
+ctrl+t - indent
+ctrl+d - deindent
+ctrl+r? - paste register ?
+ctrl+n - autocomplete next
+ctrl+p - autocomplete previous
 
 # visual mode
 v - character mode
 V - line mode
-ctrl + v - blockwise mode
+ctrl+v - blockwise mode
 
 > - indent
 < - deindent
 = - autoindent
+
+g ctrl+g - word count
 
 # macros
 q? - record macro into register ?
@@ -105,10 +108,13 @@ c$/C - change from cursor til end of line
 s - substitute
 
 u - undo
-ctrl + r - redo
+ctrl+r - redo
 . - repeat last command
 >> - indent
 << - deindent
 == - autoindent
 ]p - paste with adjusted indent
 ~ - switch case
+
+zg - add to dictionary
+zug - remove from dictionary
